@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style>
+    .box1,.box2,.box3{
+        height: 200px;
+        width: 200px;
+    }
+    .box1{
+        background-color: red;
+        animation: box1 6s infinite alternate ease-in-out;
+    }
+    @keyframes box1{
+        0%{
+            transform: translateX(0px);
+        }
+        100%{
+            background-color: blue;
+            transform: translateX(800px);
+            }
+        }
+        .box2{
+        background-color: blue;
+        animation: box2 6s infinite alternate ease-out;
+    }
+    @keyframes box2{
+        0%{
+            transform: translateX(0px);
+        }
+        100%{
+            background-color: red;
+            transform: translateX(800px);
+            }
+        }
+        .box3{
+        background-color: yellow;
+        animation: box3 6s infinite alternate ease-in;
+    }
+    @keyframes box3{
+        0%{
+            transform: translateX(0px);
+        }
+        100%{
+            background-color: red;
+            transform: translateX(800px);
+            }
+        }
+</style>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>
